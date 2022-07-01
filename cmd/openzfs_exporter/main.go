@@ -9,6 +9,7 @@ import (
 	"os"
 	"os/signal"
 	"regexp"
+	"syscall"
 	"time"
 
 	"github.com/fsrv-xyz/openzfs_exporter/internal/pool"
@@ -97,7 +98,7 @@ func init() {
 func main() {
 	// capture input signals
 	sigChan := make(chan os.Signal, 1)
-	signal.Notify(sigChan, os.Interrupt)
+	signal.Notify(sigChan, syscall.SIGINT, syscall.SIGTERM)
 
 	ctx, cancelWorkers := context.WithCancel(context.Background())
 	done := make(chan interface{})
