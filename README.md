@@ -2,8 +2,7 @@
 ![Pipeline](https://github.com/fsrv-xyz/openzfs_exporter/actions/workflows/go.yml/badge.svg?branch=master)
 ![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/fsrv-xyz/openzfs_exporter?label=Go)
 ![Maintainer](https://img.shields.io/badge/maintainer-fsrv--xyz-blue)
-<a href="https://github.com/fsrv-xyz/openzfs_export/graphs/contributors" alt="Contributors">
-<img src="https://img.shields.io/github/contributors/fsrv-xyz/openzfs_exporter" /></a>
+![contributors](https://img.shields.io/github/contributors/fsrv-xyz/openzfs_exporter)
 
 This is a Prometheus exporter for OpenZFS metrics on FreeBSD and Linux.
 
